@@ -1,63 +1,57 @@
-// Arrays
+// Condition 
 
-let framwork =["Angular","React","Vue"];
-let database = new Array("DB2" , "SQL" , "MangoDB");
+let x = 10;
+let y= 20;
+//  if(x==10 || y==10){
+//      console.log("x and y is equel to 10");
+//  }
+//   else{
+//      console.log(" x is not equle to 10 ");
+//  }
 
-
-// Accessing 
-
-console.log(framwork);
-console.log(framwork[0]);
-console.log(framwork[2]);
-
-database[0]="Oracle"
-console.log(database);
-
-//Arrays Methods
-
-console.log(framwork.length);
-console.log(framwork.sort());
-console.log(database.sort());
-
-console.log(database.pop());
-
-console.log(database);
-database.shift();
-console.log(database);
-database.push("casandra");
-console.log(database);
-
-console.log(typeof framwork);
-console.log(Array.isArray (framwork));
-console.log(framwork instanceof Array);
+console.log(x === 10 ? "True" : "False");
 
 
-//Objects in JavaScripts
+// Switch Case
 
-let employee ={
-    id:101,
-    firstName:"Rahul",
-    lastName:"Kumar",
-    age:26,
-    doj:"20/20/2019",
-    address:{
-        city:"Barh",
-        dis:"Patna",
-        country:"India",
+const rahul = "CSS";
 
-    },
-    skills:
-        ["HTML","CSS","JavaScripts"],
+switch(rahul){
+    case "HTML":
+    console.log("I am HTMl developer");
+    break;
+    case "CSS":
+    console.log("I am CSS developer");
+    break
+    default:
+    console.log("I am Javascript developer ");
+    break
 
-        fullName: function(){
-            return `${this.firstName}${this.lastName}`;
-        }
-};
-console.log(this);
-//Accessing Objects properties
 
-console.log(employee);
-console.log(employee.address);
-console.log(employee.address.country);
-console.log(employee.skills);
-console.log(employee.fullName());
+}
+
+
+// Function in JavaScripts
+
+function ShowText(text,text1){
+    console.log("I am Rahul Kumar");
+    console.log(text);
+    console.log(text1);
+
+}
+console.log(ShowText());
+console.log(ShowText("Good Morning || Good Night"));
+
+
+// Constructor Object
+
+function Mobile(brand,price,launchdate){
+    this.brand=brand;
+    this.price=price;
+    this.launchdate=launchdate;
+
+
+}
+
+const s2 =new Mobile("Samsung" ,"$264","10/02/2019");
+console.log(s2);
