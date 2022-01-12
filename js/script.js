@@ -1,79 +1,63 @@
-// alert("Hello!");
-//console.log(prompt("What is Your Name ?")); 
-console.log("I am Rahul Kumar");
-console.error("I am an error");
-console.warn("I am a Warning");
-console.info("I am a info ");
+// Arrays
 
-//Variable
-// var let and const
+let framwork =["Angular","React","Vue"];
+let database = new Array("DB2" , "SQL" , "MangoDB");
 
 
-var x= 5;
-let y= 6;
-const z= 7;
+// Accessing 
+
+console.log(framwork);
+console.log(framwork[0]);
+console.log(framwork[2]);
+
+database[0]="Oracle"
+console.log(database);
+
+//Arrays Methods
+
+console.log(framwork.length);
+console.log(framwork.sort());
+console.log(database.sort());
+
+console.log(database.pop());
+
+console.log(database);
+database.shift();
+console.log(database);
+database.push("casandra");
+console.log(database);
+
+console.log(typeof framwork);
+console.log(Array.isArray (framwork));
+console.log(framwork instanceof Array);
 
 
-//y = 8;
+//Objects in JavaScripts
 
+let employee ={
+    id:101,
+    firstName:"Rahul",
+    lastName:"Kumar",
+    age:26,
+    doj:"20/20/2019",
+    address:{
+        city:"Barh",
+        dis:"Patna",
+        country:"India",
 
-if(true){
-    let y=5;
-    var x= 6
-    console.log(x);
-    console.log(y);
-}
-console.log(x);
-    console.log(y);
-console.log(z);
+    },
+    skills:
+        ["HTML","CSS","JavaScripts"],
 
+        fullName: function(){
+            return `${this.firstName}${this.lastName}`;
+        }
+};
+console.log(this);
+//Accessing Objects properties
 
-
-// Operators
-
-// console.log(2 + 2);
-// console.log(2 * 3);
-// console.log(10 - 5);
-// console.log(10 / 5);
-
-//let n=10;
-//console.log(--n);
-//console.log(++n);
-
-
-
-
-//DataType(String, Number , boolean ,   null , undifined , symbol )
-
-
-let name="Rahul Kumar";
-let age =26;
-let isProgrammer= true;
-let noValue=null;
-let unAssigned;
-
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof isProgrammer);
-console.log(typeof noValue);
-console.log(typeof 6)
-console.log(typeof Rahul);
-
-
-
-
-// String Method 
-
-let firstName="Rahul ";
-let lastName="Kumar";
-let Laguage="HTML , CSS and JavaScripts ";
-
-
-console.log(firstName);
-console.log(firstName+lastName);
-console.log("my first name is " + firstName +"last name is " + lastName);
-
-
-
-
-
+console.log(employee);
+console.log(employee.address);
+console.log(employee.address.country);
+console.log(employee.skills);
+console.log(employee.fullName());
